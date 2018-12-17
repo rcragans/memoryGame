@@ -1,0 +1,63 @@
+img{
+    height:639px;
+    width:480px;
+}
+.card{
+    width: 480px;
+    height: 639px;
+    perspective: 2000px;
+    border: 2px solid cornflowerblue;
+}
+
+.card-holder{
+    width: 480px;
+    height: 639px;
+    transition: all 2s;
+    position: relative;
+    /* transform-origin: 20% 40%; */
+}
+
+.card-front, .card-back{
+    position: absolute;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    transform: rotateY(-90deg);
+}
+
+.flip{
+    transform: rotateY(90deg);
+    transform-style: preserve-3d;
+
+}
+#parent{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    padding: 10px;
+    background-color: #4f5f6c;
+    perspective: 200px;
+}
+
+#parent div{
+    padding: 50px;
+    border: 1px solid #0912ee;
+}
+
+#threeD{
+    background-color: #0f0;
+    transform:rotateX(45deg);
+}
+
+#threeD2{
+    background-color: #f0f;
+    transform: rotateY(45deg)
+}
+
+#threeD3{
+    background-color: #ff0;
+    transform: rotateZ(45deg)
+}
